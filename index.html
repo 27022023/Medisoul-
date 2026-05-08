@@ -22,24 +22,24 @@
       position: relative;
     }
 
-    /* Title */
+    /* Title - MUCH bigger */
     .title {
       position: absolute;
-      top: 40%;
+      top: 38%;
       transform: translateY(-50%);
       text-align: center;
-      font-size: 4rem;
+      font-size: 6rem;
       color: #5A2A27;
-      letter-spacing: 2px;
-      font-weight: 600;
+      letter-spacing: 3px;
+      font-weight: 700;
     }
 
-    /* HUGE ⚕️ symbol */
+    /* HUGE ⚕️ emoji */
     .snake-emoji {
       position: absolute;
-      top: 60%;
+      top: 62%;
       transform: translateY(-50%);
-      font-size: 10rem;
+      font-size: 14rem;
       color: #5A2A27;
       opacity: 0.9;
     }
@@ -49,10 +49,10 @@
       position: absolute;
       top: 30px;
       right: 30px;
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       background: #ffffffaa;
-      border-radius: 10px;
+      border-radius: 12px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -67,17 +67,17 @@
     }
 
     .menu-btn span {
-      font-size: 2rem;
+      font-size: 2.4rem;
       color: #5A2A27;
       font-weight: bold;
     }
 
-    /* Slide-out menu */
+    /* Slide-out menu (completely hidden by default) */
     .menu {
       position: fixed;
       top: 0;
-      right: -260px;
-      width: 260px;
+      right: -300px;
+      width: 300px;
       height: 100%;
       background: #fff;
       box-shadow: -4px 0 12px rgba(0,0,0,0.2);
@@ -85,6 +85,8 @@
       transition: 0.4s ease;
       font-family: 'Cinzel', serif;
       z-index: 999;
+      display: flex;
+      flex-direction: column;
     }
 
     .menu.open {
@@ -92,15 +94,15 @@
     }
 
     .menu h2 {
-      font-size: 1.6rem;
+      font-size: 2rem;
       margin-bottom: 20px;
       color: #5A2A27;
     }
 
     .menu a {
       display: block;
-      margin: 15px 0;
-      font-size: 1.2rem;
+      margin: 20px 0;
+      font-size: 1.4rem;
       color: #5A2A27;
       text-decoration: none;
       transition: 0.2s;
@@ -108,7 +110,7 @@
 
     .menu a:hover {
       color: #FF6A5A;
-      transform: translateX(4px);
+      transform: translateX(6px);
     }
 
     /* Invisible overlay to close menu */
